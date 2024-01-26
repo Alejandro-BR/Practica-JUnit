@@ -1,5 +1,5 @@
 /**
- * Pruebas realizadas para la funcion  multiplicacion clase Funciones.
+ * Pruebas realizadas para la funcion  multiplicacion de la clase Funciones.
  * Para su realizacion se utilizara la herramienta JUnit, dicha  libreria debera ser descargada.
  * 
  * @author Alejandro Barrionuevo Rosado
@@ -53,14 +53,14 @@ public class MultiplicacionTest {
     Assert.assertEquals(-16, resultado);
   }
 
-    // Prueba de multiplicacion de numeros negativos
+  // Prueba de multiplicacion de numeros negativos
 
-    @Test
-    public void multiplicacionNegativosTest() {
-      int numero1 = -4;
-      int numero2 = -5;
-      int resultado = Funciones.multiplicacion(numero1, numero2);
-      Assert.assertEquals(20, resultado);
-    }
+  @Test
+  public void multiplicacionNegativosTest() {
+    int numero1 = -4;
+    int numero2 = -5;
+    int resultado = Funciones.multiplicacion(numero1, numero2);
+    Assert.assertEquals(20, resultado);
+  }
 
 }
