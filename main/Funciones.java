@@ -4,6 +4,7 @@
  * @author Alejandro Barrionuevo Rosado
  */
 
+package main;
 public class Funciones {
 
   public int multiplicacion(int a, int b) {
