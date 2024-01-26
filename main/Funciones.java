@@ -1,5 +1,7 @@
 /**
- * Codigo proporcionado por el profesor.
+ * Este codigo proporcionado por el profesor
+ * fue modificado para poder pasar las pruebas realizadas
+ * y tambien documentado.
  * 
  * @author Alejandro Barrionuevo Rosado
  */
@@ -7,16 +9,38 @@
 package main;
 public class Funciones {
 
-  public int multiplicacion(int a, int b) {
+  /**
+   * Funcion de  multiplicacion de enteros
+   * @param a int 
+   * @param b int 
+   * @return int 
+   */
+  public static int multiplicacion(int a, int b) {
     int resultado = 0;
+
+    //En caso de multiplicar por 0
+    if ((a == 0) || (b == 0)) {  
+      return resultado;
+    }
+
+    //En caso de multiplicar dos numeros negativos
+    if ((a < 0) && (b < 0)) {
+      a *= -1;
+      b *= -1;
+    }
     
-    for (int i = 1; i < a; i++) {
+    for (int i = 1; i <= b; i++) { 
       resultado += a;
     }
     
     return resultado;
   }
   
+  /**
+   * Funcion para el calculo de la media
+   * @param array int[]
+   * @return double (preferiblemente)
+   */
   public double media(int[] array) {
     double suma = 0;
     
